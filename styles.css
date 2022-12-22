@@ -117,6 +117,27 @@ a:hover::before{
     margin-top: 11px;
 }
 
+.menu_toggler{
+    color:white;
+    background: none;
+    width: 45px;
+    border: none;
+    cursor:pointer;
+    outline: none;
+    z-index: 999;
+    position: relative;
+    display: none;
+}
+
+.menu_toggler span{
+    display: block;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    position: relative;
+    transition: .3s linear;
+}
+
 @media screen and (max-width: 640px) {
     .header {
         flex-direction: column;
