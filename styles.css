@@ -152,15 +152,14 @@ a:hover::before{
         align-items: center;
         justify-content: center;
         background-color: rgb(0, 0, 0, 0.9);
-        transition: 1s ease;
         opacity: 0;
         visibility: hidden;
     }
-
+    
     .links a {
         display: block;
         font-size: 40px;
-        transition: 1s;
+        transition: 1s ease;
     }
 
     .links a.active {
@@ -185,6 +184,11 @@ a:hover::before{
         transform:rotate(-45deg) translate(12px);
     }
 }
+ /* .box img:hover, .box img.clicked{
+        margin-left:500px;
+        -webkit-transition:1s; // you don't need to specify this again
+     } */
+
 
 .intro{
     min-height: 1200px;
