@@ -5,12 +5,7 @@ body {
     /* border: 2px solid white; */
 }
 
-@font-face {
-    font-family: Rubik_Vinyl;
-    src: url(Rubik_Vinyl/RubikVinyl-Regular.ttf);
-}
-
-@font-face {
+/* @font-face {
     font-family: Arvo;
     src: url(Arvo/Arvo-Regular.ttf);
 }
@@ -23,7 +18,7 @@ body {
 @font-face {
     font-family: IBM;
     src: url(IBM_Plex_Mono/IBMPlexMono-Medium.ttf);
-}
+} */
 
 /* @font-face {
     font-family: Poppins;
@@ -50,9 +45,14 @@ body {
     font-size: larger;
     /* border-bottom: 2px solid white; */
     font-size: 17px;
+    -webkit-backdrop-filter: blur(50px);
     backdrop-filter:blur(50px);
     /* background-color: black; */
 }
+
+/* -moz-filter:blur(10px);
+-o-filter:blur(10px);
+-webkit-filter:blur(10px); */
 
 .links {
     display: flex;
