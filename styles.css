@@ -25,14 +25,16 @@ body {
     src: url(IBM_Plex_Mono/IBMPlexMono-Medium.ttf);
 }
 
-@font-face {
+/* @font-face {
     font-family: Poppins;
     src: url(Poppins/Poppins-Light.ttf);
 }
 @font-face {
     font-family: Poppins_bold;
     src: url(Poppins/Poppins-Bold.ttf);
-}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 .header {
     display:flex;
@@ -99,7 +101,7 @@ a:hover::before{
 .name {
     font-size:larger;
     font-weight: bolder;
-    font-family: 'Poppins_bold';
+    font-family: 'Poppins';
     text-decoration:overline;
 }
 
@@ -186,7 +188,7 @@ a:hover::before{
 
 .intro{
     min-height: 1200px;
-    background: url(/Users/will/Desktop/Portfolio/Portfolio_Programmer/FUTUR\ 2.PNG) no-repeat center;
+    background: url(FUTUR\ 2.PNG) no-repeat center;
     background-size: cover;
     /* background-attachment:fixed; */
 }
