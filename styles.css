@@ -138,7 +138,8 @@ a:hover::before{
         display: block;
     }
     .header {
-        padding-right: 20px;
+        padding-right: 2em;
+        padding-left: 1em;
     }
     .links {
         position: fixed;
@@ -210,6 +211,7 @@ a:hover::before{
         padding: 5vh 0 !important;
         align-items: center !important;
         justify-content: center !important;
+        font-size: 2.5vh !important;
     }
     .me2 {
         padding:1em;
@@ -236,7 +238,7 @@ a:hover::before{
     /* background-attachment:fixed; */
     width: 50%;
     left: 0px;
-    height: 100%;
+    /* height: 100%; */
     /* flex:1 !important; */
 }
 
@@ -248,7 +250,7 @@ a:hover::before{
     align-items: center;
     padding-left:3em;
     padding-right: 3em;
-    font-size: 2.5vh;
+    font-size: 1.5vw;
     font-family: 'Poppins';
     flex-wrap: wrap;
     flex:1 !important;

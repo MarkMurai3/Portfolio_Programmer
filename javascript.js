@@ -30,3 +30,15 @@ $(document).ready(function(){
 //     $(this).removeClass('error');
 //     next();
 //   })
+
+// $(".aboutme").ready(function () {
+//     var holdWidth = $(".aboutme").width();
+//     var holdHeight = $(".aboutme").height();
+//     var holdAverageSize = (holdWidth + holdHeight) / 2;
+//     $(".aboutme").on('resize', function () {
+//         newAverageSize = ($(".aboutme").width() + $(".aboutme").height()) / 2;
+//         newPercentage = ((newAverageSize / holdAverageSize) * 100) + "%";
+//         $("html").css("font-size", newPercentage)
+//         console.log(newPercentage);
+//     });
+// });
