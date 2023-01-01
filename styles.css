@@ -48,7 +48,7 @@ body {
     -webkit-backdrop-filter: blur(50px);
     backdrop-filter:blur(50px);
     /* background-color: black; */
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
 
 }
 
@@ -208,6 +208,12 @@ a:hover::before{
     .aboutme{
         min-width: 100vw;
         padding: 5vh 0 !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .me2 {
+        padding:1em;
+        text-align: center;
     }
 }
  /* .box img:hover, .box img.clicked{
