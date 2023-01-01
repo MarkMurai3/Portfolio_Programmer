@@ -43,11 +43,13 @@ body {
     align-items: center;
     font-size:15px;
     font-size: larger;
-    /* border-bottom: 2px solid white; */
+    border-bottom: 2px solid white;
     font-size: 17px;
     -webkit-backdrop-filter: blur(50px);
     backdrop-filter:blur(50px);
     /* background-color: black; */
+    mix-blend-mode: difference;
+
 }
 
 /* -moz-filter:blur(10px);
@@ -130,7 +132,7 @@ a:hover::before{
     position: relative;
     transition: .3s linear;
 }
-
+/* THIS IS THE RESPONSIVE PART */
 @media screen and (max-width: 640px) {
     .menu_toggler {
         display: block;
@@ -189,6 +191,9 @@ a:hover::before{
         /* width: auto !important; */
         /* padding-bottom: 100px !important;
         padding-top: 50px !important; */
+        font-size: 12vw!important;
+        height:90vh !important;
+;
     }
     .intro{
         display: flex;
@@ -200,7 +205,10 @@ a:hover::before{
         min-width: 100%;
         /* max-height: 200% !important; */
     }
-   
+    .aboutme{
+        min-width: 100vw;
+        padding: 5vh 0 !important;
+    }
 }
  /* .box img:hover, .box img.clicked{
         margin-left:500px;
@@ -209,7 +217,7 @@ a:hover::before{
 
 .intro{
     display: flex;
-    background-size: 205%;
+    /* background-size: 205%; */
 
 }
 
@@ -234,11 +242,11 @@ a:hover::before{
     align-items: center;
     padding-left:3em;
     padding-right: 3em;
-    font-size: 1.5vw;
+    font-size: 2.5vh;
     font-family: 'Poppins';
     flex-wrap: wrap;
     flex:1 !important;
-    max-height: 70vw;
+    max-height: 100vh;
 }
 
 .me1{
@@ -262,17 +270,17 @@ a:hover::before{
     display:flex;
     flex-direction: column;
     padding: 0;
-    /* padding-top: 30px !important; */
+    /* padding-bottom: 10vh !important; */
     /* width: 100%; */
     /* right:0; */
     /* min-height: 13em; */
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     text-align: center;
     font-size: 4em;
     font-family: 'Poppins';
     font-weight: bolder;
-    height: 100vh !important;
+    height: 100vh;
 }
 
 .myself{
