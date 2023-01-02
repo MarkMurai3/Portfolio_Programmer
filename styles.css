@@ -48,8 +48,8 @@ body {
     -webkit-backdrop-filter: blur(50px);
     backdrop-filter:blur(50px);
     /* background-color: black; */
-    /* mix-blend-mode: difference; */
-
+    mix-blend-mode: difference;
+    z-index: 1;
 }
 
 /* -moz-filter:blur(10px);
@@ -141,6 +141,7 @@ a:hover::before{
         /* padding-right: 2em;
         padding-left: 1em; */
         justify-content: space-between;
+        background-color: black;
     }
     .links {
         position: fixed;
@@ -213,6 +214,7 @@ a:hover::before{
         align-items: center !important;
         justify-content: center !important;
         font-size: 2.5vh !important;
+        /* border-bottom: 1vh solid white; */
     }
     .me2 {
         padding:1em;
@@ -224,10 +226,10 @@ a:hover::before{
         -webkit-transition:1s; // you don't need to specify this again
      } */
 
+
 .intro{
     display: flex;
     /* background-size: 205%; */
-
 }
 
 .left_perfil{
@@ -303,6 +305,36 @@ a:hover::before{
 
 .showcase{
     width: 100%;
-    background-color: gray;
+    background-color:rgb(255, 255, 255);
     min-height: 100vh;
+    color:black;
+    font-family: 'Poppins';
+}
+.description {
+    text-align: center;
+    padding-top: 2em;
+    font-size: 5vh;
+}
+
+.projects{
+    color:red;
+    font-weight: bolder;
+}
+
+.dont {
+    font-size: small;
+}
+
+.examples {
+    display:contents;
+    width: fit-content;
+}
+
+.scrolling img {
+    width: 100vw;
+    height: 50%;
+}
+
+.scrolling {
+    overflow-x: scroll;
 }
