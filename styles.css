@@ -250,7 +250,6 @@ a:hover::before{
     /* background-size: 205%; */
     /* background-attachment:fixed; */
     width: 50%;
-    left: 0px;
     /* height: 100%; */
     /* flex:1 !important; */
 }
@@ -314,7 +313,7 @@ a:hover::before{
 }
 
 .showcase{
-    width: 100%;
+    /* width: 50vw; */
     background-color:rgb(255, 255, 255);
     min-height: 100vh;
     color:black;
@@ -328,6 +327,7 @@ a:hover::before{
 
 .projects{
     color:red;
+    font-size: 1.5em;
     font-weight: bolder;
 }
 
@@ -340,17 +340,110 @@ a:hover::before{
     width: fit-content;
 } */
 
-.scrolling img {
-    width: 90%;
-   
+
+
+.examples {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+}
+.examples img {
+    width: 100%;
 }
 
-.scrolling {
+.calc_txt {
+    position: absolute;
+    
+}
+
+.rps_txt{
+    position: absolute;
+}
+
+.calculator {
+    position: relative;
+    display: inline-block;
+}
+.calculator :nth-child(1) .card {
+    background: url(icons/calc_icons_512.png) center no-repeat;
+    background-color: rgb(60, 60, 60);
+    height: 55vh;
+    width: 100%;
+}
+
+.text{
+    position: absolute;
+    top:0;
+    left:0;
     display: flex;
-    /* width: 100%; */
-    overflow-x: scroll;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 50vw;
+    height: 100%;
+    font-family: 'Poppins';
+    /* -webkit-text-stroke: 3px black; */
+    color: red;
+    font-size: 3em;
+    font-weight: bolder;
+    opacity: 0;
+    transition: .5s ease;
+}
+.text > *{
+    transform: translateY(-20px);
+    transition: transform .5s;
 }
 
+.text:hover {
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    transition: .5s ease ;
+    background: rgba(0, 0, 0, 0.4);
+}
+.text:hover > *{
+    transform: translateY(0);
+}
+.button {
+    font-size:large;
+    font-family: 'Poppins';
+    background-color: white;
+    border:2px solid red;
+    padding: 10px 30px;
+    font-weight: 500;
+    transition: .5s ease;
+}
+
+.button:hover{
+    background-color: red;
+    color:white;
+    transition: .5s ease;
+}
+
+.card_2 {
+    background: url(icons/rps_512.png) center no-repeat;
+    background-color: rgb(194, 194, 194);
+    width: 100%;
+    height: 55vh;
+    right: 0;
+}
+
+.text_2{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.card_3{
+    background: url(icons/landing_512.png) center no-repeat;
+    background-color: rgb(194, 194, 194);
+    height: 55vh;
+}
+
+.card_4{
+    background: url(icons/etch_512.png) center no-repeat;
+    background-color: rgb(60, 60, 60);
+    height: 55vh;
+}
 
 /* .scrolling img:hover {
     opacity: 1;
