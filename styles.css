@@ -63,18 +63,18 @@ body {
     font-family: 'Poppins';
 }
 
-a{
+.links a{
     position: relative;
     color:white;
     text-decoration: none;
 }
 
-a:hover{
+.links a:hover{
     color:white;
 }
 
 
-a::before{
+.links a::before{
     content:'';
     position: absolute;
     width: 100%;
@@ -89,7 +89,7 @@ a::before{
     transition: 0.3s ease;
 }
 
-a:hover::before{
+.links a:hover::before{
     transform: scaleX(1);
 }
 
@@ -229,7 +229,12 @@ a:hover::before{
     .scrolling img {
         width: 100% !important;
     }
-    
+    .text{
+        font-size: 7vw !important;
+    }
+    .check{
+        font-size: medium !important;
+    }
 }
  /* .box img:hover, .box img.clicked{
         margin-left:500px;
@@ -342,8 +347,8 @@ a:hover::before{
 
 
 
-.examples {
-    display: grid;
+/* .examples {
+    display: inline-block;
     grid-template-columns: 50% 50%;
     position: relative;
 }
@@ -382,7 +387,6 @@ a:hover::before{
     width: 50vw;
     height: 100%;
     font-family: 'Poppins';
-    /* -webkit-text-stroke: 3px black; */
     color: red;
     font-size: 3em;
     font-weight: bolder;
@@ -419,7 +423,7 @@ a:hover::before{
     transition: .5s ease;
 }
 
-.card_2 {
+.rock-paper-scissors :nth-child(1) .card {
     background: url(icons/rps_512.png) center no-repeat;
     background-color: rgb(194, 194, 194);
     width: 100%;
@@ -433,17 +437,17 @@ a:hover::before{
     left: 0;
 }
 
-.card_3{
-    background: url(icons/landing_512.png) center no-repeat;
+.etch-a-sketch :nth-child(1) .card{
+    background: url(icons/etch_512.png) center no-repeat;
     background-color: rgb(194, 194, 194);
     height: 55vh;
 }
 
-.card_4{
-    background: url(icons/etch_512.png) center no-repeat;
+.landing-page :nth-child(1) .card{
+    background: url(icons/landing_512.png) center no-repeat;
     background-color: rgb(60, 60, 60);
     height: 55vh;
-}
+} */
 
 /* .scrolling img:hover {
     opacity: 1;
@@ -461,3 +465,70 @@ a:hover::before{
 .calc_hover:hover {
     opacity: 1;
 } */
+
+
+.container{
+    position: relative;
+    width:49vw;
+    display:inline-block;
+    left: 0;
+    top:0;
+}
+
+.image{
+    display:block;
+    width: 100%;
+    background-color: rgb(82, 82, 82);
+}
+.overlay{
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+}
+.container:hover .overlay{
+    opacity: 1;
+}
+.text{
+    /* width: 50vw;
+    height: 100%; */
+    font-family: 'Poppins';
+    color: red;
+    font-size: 5vw;
+    font-weight: bolder;
+    position: absolute;   
+}
+.overlayLeft{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container:hover .overlayLeft{
+    width: 100%;
+}
+.check{
+    font-size:2vw;
+    font-family: 'Poppins';
+    background-color: white;
+    border:2px solid red;
+    padding: 10px 30px;
+    font-weight: 500;
+    transition: .5s ease;
+    
+}
+.check:hover{
+    background-color: red;
+    color:white;
+    transition: .5s ease;
+}
+
+
+.contact_section{
+    width: 100vw;
+    height: 100vh;
+}
