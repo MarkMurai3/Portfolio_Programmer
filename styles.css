@@ -157,7 +157,7 @@ body {
         justify-content: center;
         background-color: rgb(0, 0, 0);
         opacity: 0;
-        visibility:hidden;
+        /* visibility:hidden; */
     }
     
     .links a {
@@ -286,9 +286,14 @@ body {
         -webkit-transition:1s; // you don't need to specify this again
      } */
 
-
+.main{
+    transform: translateY(-50px);
+    opacity: 0;
+    
+}
 .intro{
     display: flex;
+    
     /* background-size: 205%; */
 }
 
@@ -333,7 +338,6 @@ body {
 .me2 div{
     padding:10px;
 }
-
 
 .introduction{
     background-color: black;
