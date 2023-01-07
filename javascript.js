@@ -44,7 +44,6 @@ $(window).bind("load", function() {
  });
 
 //Make phone header disappear when button is pressed
-//See if the contacts are working on the phone too
 
 // $('#user_button').toggle().css('borderBottomLeftRadius','+5px');
 
