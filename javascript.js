@@ -40,8 +40,18 @@ $(document).ready(function (){
 });
 
 $(window).bind("load", function() {
-    $('.main').animate({ opacity: 1 }, 2000);
+    $('.main').animate({ opacity: 1 }, 2500);
  });
+
+//  transform: translateY(20px);
+//         transition: 1s;
+
+$(window).ready(function(){
+    $('.links a').click(function(){
+        $('.menu_toggler').toggleClass("active");
+        $(".links").toggleClass("active");
+    });
+});
 
 //Make phone header disappear when button is pressed
 
