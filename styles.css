@@ -235,6 +235,51 @@ body {
     .check{
         font-size: medium !important;
     }
+    .container{
+        position: relative;
+        width:49vw !important;
+        display:inline-block;
+        left: 0;
+        top:0;
+    }
+    .overlayLeft{
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:0;
+        background-color: rgb(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container:hover .overlayLeft{
+        width: 100%;
+    }
+    .check{
+        font-size:2vw;
+        font-family: 'Poppins';
+        background-color: white;
+        border:2px solid red;
+        padding: 10px 30px;
+        font-weight: 500;
+        transition: .5s ease;
+        
+    }
+    .check:hover{
+        background-color: red;
+        color:white;
+        transition: .5s ease;
+    }
+    .contact_container{
+        display: grid !important;
+        grid-template-columns: auto auto;
+    }
+    .c img{
+        width: 30vw !important;
+    }
+    
+    
 }
  /* .box img:hover, .box img.clicked{
         margin-left:500px;
@@ -320,13 +365,16 @@ body {
 .showcase{
     /* width: 50vw; */
     background-color:rgb(255, 255, 255);
-    min-height: 100vh;
+    min-height: 90vh;
     color:black;
     font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+
 .description {
     text-align: center;
-    padding-top: 2em;
     font-size: 5vh;
 }
 
@@ -469,7 +517,7 @@ body {
 
 .container{
     position: relative;
-    width:49vw;
+    width:24vw;
     display:inline-block;
     left: 0;
     top:0;
@@ -493,7 +541,7 @@ body {
     height: 100%; */
     font-family: 'Poppins';
     color: red;
-    font-size: 5vw;
+    font-size: 3vw;
     font-weight: bolder;
     position: absolute;   
 }
@@ -527,9 +575,14 @@ body {
     transition: .5s ease;
 }
 
+/* CONTACT */
 
 .contact_section{
     width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     
 }
 .upper{
@@ -541,7 +594,7 @@ body {
     text-align: center;
 }
 .upper_1{
-    font-size: 5vw;
+    font-size: 6vw;
     display: flex;
     flex-direction: row;
     gap:1vw;
@@ -554,9 +607,8 @@ body {
     font-size: small;
 }
 .c img {
-    width: 11vw;
-    padding: 5vw;
-
+    width: 15vw;
+    padding: 2vh 5vw;
 }
 .contact_container{
     display: flex;
@@ -573,5 +625,6 @@ body {
     justify-content: center;
     padding: 1em;
     font-family: 'Poppins';
+    font-size: medium;
     /* border-top: 2px solid white; */
 }

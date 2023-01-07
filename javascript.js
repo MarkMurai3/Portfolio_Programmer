@@ -16,6 +16,33 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function (){
+    $(".work").click(function (){
+        $('html, body').animate({
+            scrollTop: $(".showcase").offset().top
+        }, 1000);
+    });
+    $(".home").click(function(){
+        $('html, body').animate({
+            scrollTop: $(".main").offset().top
+        }, 1000);
+    });
+    $(".about").click(function(){
+        $('html, body').animate({
+            scrollTop: $(".intro").offset().top
+        }, 1000);
+    });
+    $(".contact").click(function(){
+        $('html, body').animate({
+            scrollTop: $(".contact_section").offset().top
+        }, 1000);
+    });
+});
+
+//Make phone header disappear when button is pressed
+//Loading screen maybe
+//Fix the about me button's scrolling position
+
 // $('#user_button').toggle().css('borderBottomLeftRadius','+5px');
 
 // setTimeout(function(){
