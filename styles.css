@@ -530,5 +530,48 @@ body {
 
 .contact_section{
     width: 100vw;
-    height: 100vh;
+    
+}
+.upper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    font-family: 'Poppins';
+    text-align: center;
+}
+.upper_1{
+    font-size: 5vw;
+    display: flex;
+    flex-direction: row;
+    gap:1vw;
+    font-weight: bold;
+}
+.part1{
+    color:red;
+}
+.c{
+    font-size: small;
+}
+.c img {
+    width: 11vw;
+    padding: 5vw;
+
+}
+.contact_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 5em; */
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+.footer_txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    font-family: 'Poppins';
+    /* border-top: 2px solid white; */
 }
